@@ -1,0 +1,15 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/** Hides Alpinejs element until Apline is fully loaded */
+
+[x-cloak] {
+  display: none !important;
+}
+
+@layer utilities {
+  html {
+    scroll-behavior: smooth;
+  }
+}

@@ -1,0 +1,19 @@
+{% block html_head_container %}
+	{% include 'html-header.twig' %}
+	{% block head %}{% endblock %}
+</head>{% endblock %}<body class="antialiased text-gray-900" data-template="base.twig">
+{{ function('wp_body_open') }}
+<header class="h-20 lg:h-20">
+	{% block header %}
+		{% include "./scaffolding/navigation.twig" %}
+	{% endblock %}
+</header>
+{% block content %}
+	Sorry, no content
+{% endblock %}
+{% block footer %}
+	<footer id="footer">
+		{% include './scaffolding/footer.twig' %}
+	</footer>
+	{{ function('wp_footer') }}
+{% endblock %}</body></html>
